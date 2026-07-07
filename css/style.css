@@ -418,3 +418,19 @@ transform:none;
     font-weight:bold;
     
     }
+
+    #frequency{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:8px 20px;
+        margin-top:10px;
+    }
+    
+    .freq-item{
+        display:flex;
+        justify-content:space-between;
+        padding:4px 8px;
+        background:#0d1b2a;
+        border-radius:4px;
+        font-family:monospace;
+    }
