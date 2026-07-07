@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dossier 002</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="window">
+
+        <!-- Info knop -->
+        <button id="infoButton" class="info-btn">ⓘ</button>
+
+        <h2>DOSSIER 002</h2>
+
+        <div class="status">
+            Nieuwe encryptie gedetecteerd: FREQUENTIE-ANALYSE
+        </div>
+        
+        <div class="layout">
+        
+            <!-- GEHEIME TEKST -->
+            <div class="panel">
+                <h3>Versleutelde tekst</h3>
+                <div id="cipherText" class="cipher"></div>
+            </div>
+        
+            <!-- FREQUENTIE -->
+            <div class="panel">
+                <h3>Letter frequentie</h3>
+                <div id="frequency"></div>
+            </div>
+        
+        </div>
+        
+        <!-- INPUT -->
+        <div class="controls">
+            <input id="letterFrom" placeholder="Van (bv. G)">
+            <input id="letterTo" placeholder="Naar (bv. E)">
+            <button onclick="applySubstitution()">Toepassen</button>
+            <button onclick="resetTranslation()">Reset</button>
+        </div>
+        
+        <!-- RESULT -->
+        <div class="panel">
+            <h3>Vertaling</h3>
+            <div id="translation"></div>
+        </div>
+
+        <input
+        id="answer"
+        placeholder="Typ hier de ontcijferde tekst">
+
+        <button
+        onclick="checkAnswer('kom naar rome','missie3.html')">
+        Controleer
+    </button>
+    <p id="result"></p>
+
+    </div>
+
+</div>
+
+<!-- Popup -->
+
+<div id="infoModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2>ANALISTENBRIEFING</h2>
+
+        <p>
+            mono-alfabetische substitutie <br>
+            <br>
+            Om deze code te kraken zul je gebruik moeten maken van een frequentie-analyse<br>
+            <br>
+            Frequentie analyse werd bedacht door de Arabische wiskundige Al-Kindi in de 9de eeuw. <br>
+            Hij ondekte bepaalde letters, en combinaties van letters, vaker voorkwamen.<br>
+            Door naar deze patronen in verleutelde teksten te zoeken, kon hij de versleuteling kraken. <br>
+            Met deze truc kon hij geheime berichten lezen <br>
+            <br>
+            Tips voor frequentie-analyse:<br>
+            de letter E komt in het Nederlands veruit het vaakst voor (ongeveer 19%), gevolgd door de N (10%), de A (8%) en de I (6.5%)<br>
+            Kijk naar tweeletter worden. Makkelijke woorden om te vinden: EN, IK, JE, ZO, NU, WE <br>
+            Kijk naar drieletter worden. Makkelijke woorden om te vinden: WAS, DAN, AAN, MET, HET, 
+            Woorden hebben altijd een combinatie van klinkers en medeklinkers <br>
+        
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/missie.js"></script>
+<script src="js/frequentie.js"></script>
+
+</body>
+
+</html>
+

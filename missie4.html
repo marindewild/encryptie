@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dossier 004</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="window">
+
+        <!-- Info knop -->
+        <button id="infoButton" class="info-btn">ⓘ</button>
+
+        <h2>DOSSIER 004</h2>
+
+        <div class="status">
+            Status:4
+            <span class="green">Versleuteld bericht onderschept: Enigma-machine</span>
+        </div>
+
+        <div class="message">
+            MVIKWA AKKJW EHTAP NVI
+        </div>
+        <button class="btn btn-success" onclick="location.href='https://www.101computing.net/enigma/enigma-M3.html';">
+            Ga naar Enigma Machine
+          </button>
+        <div class="message">
+            Ring setting: L U V<br>
+            Start positie: N O W
+        </div>
+        <input
+            id="answer"
+            placeholder="Typ hier de ontcijferde tekst">
+
+        <br><br>
+
+        <button
+            onclick="checkAnswer('ROMEO WEZIJ NONTD EKT','missie5.html')">
+            Controleer
+        </button>
+
+        <button
+            id="hintButton"
+            class="hint-btn"
+            style="display:none;">
+            Extra hint
+        </button>
+
+        <p id="result"></p>
+
+    </div>
+
+</div>
+
+<!-- Popup -->
+
+<div id="infoModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2>ANALISTENBRIEFING</h2>
+
+        <p>
+
+            Het bericht is gestuurd met een Enigma-machine<br>
+            <br>
+            Een Enigma-machine is een geheime codeermachine uit de Tweede Wereldoorlog. <br>
+            Het lijkt op een typemachine, maar in plaats van letters op papier te drukken, licht het lampje van een andere letter op. Zo werden berichten versleuteld. <br>
+            Een Enigma-machine heeft een aantal wielen, die draaien om de letter te veranderen<br>
+            Als je de wielen op dezelfde stand zet (de ring-setting), en met dezelfde start-letters begint, kan je het bericht weer ontcijferen.
+            <br>
+            Wij hebben de ring setting en start positie onderschept. <br>
+
+            BELANGRIJK: Zet de Enigma-machine op decrypt voor je begint <br>
+            BELANGRIJK 2: Maak je een fout, vergeet dan niet de start-positie weer terug te zetten voor je weer verder gaat!
+            <br>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/missie.js"></script>
+
+</body>
+
+</html>

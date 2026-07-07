@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dossier 005</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="window">
+
+        <!-- Info knop -->
+        <button id="infoButton" class="info-btn">ⓘ</button>
+
+        <h2>DOSSIER 005</h2>
+
+        <div class="status">
+            Status: Nieuwe encryptie gedetecteerd
+            <span class="green"></span>
+        </div>
+
+        <div class="window">
+
+            <h2>Brute Force Simulator</h2>
+            
+            <label>
+            
+            Wachtwoordlengte
+            
+            <input
+            type="number"
+            id="length"
+            value="8"
+            min="1"
+            max="32">
+            
+            </label>
+            
+            <h3>Gebruikte tekens</h3>
+            
+            <label><input type="checkbox" id="lower" checked> a-z</label><br>
+            
+            <label><input type="checkbox" id="upper"> A-Z</label><br>
+            
+            <label><input type="checkbox" id="numbers"> 0-9</label><br>
+            
+            <label><input type="checkbox" id="symbols"> !@#$%</label>
+            
+            <br><br>
+            
+            <button onclick="startAttack()">
+            
+            Start aanval
+            
+            </button>
+            
+            <hr>
+            
+            <div id="stats"></div>
+            
+            <div id="progressBar">
+            
+            <div id="progress"></div>
+            
+            </div>
+            
+            <div id="attempts"></div>
+            
+            <div id="secret"></div>
+            
+            </div>
+    </div>
+
+</div>
+
+<!-- Popup -->
+
+<div id="infoModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2>ANALISTENBRIEFING</h2>
+
+        <p>
+
+            De gebruikte encryptie is herkend als een Caesar-substitutie.<br>
+            
+            Bij deze techniek wordt iedere letter vervangen door een andere letter die steeds hetzelfde aantal plaatsen verder in het alfabet staat.<br>
+
+            Bijvoorbeeld: <br>
+
+            a = b<br>
+            b = c<br>
+            c = d<br>
+        
+            Julius Caesar gebruikte deze geheimschrift 2000 jaar geleden om met zijn veldheren te communiceren. <br>
+            Zelfs als de vijand het bericht in handen kreeg, wisten ze niet wat Caesar van plan was. <br>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/missie.js"></script>
+<script src="js/brute-force.js"></script>
+
+
+</body>
+
+</html>
