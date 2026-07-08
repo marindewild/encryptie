@@ -26,7 +26,7 @@
 
         <div class="window">
 
-            <h2>Brute Force Simulator</h2>
+            <h2>Brute Force</h2>
             
             <label>
             
@@ -35,7 +35,7 @@
             <input
             type="number"
             id="length"
-            value="8"
+            value="5"
             min="1"
             max="32">
             
@@ -74,6 +74,15 @@
             <div id="secret"></div>
             
             </div>
+            <input
+            id="answer"
+            placeholder="wachtwoord">
+
+        <br><br>
+            <button
+            onclick="checkAnswer('3ncrypt','berichten.html')">
+            Log In
+        </button>
     </div>
 
 </div>
@@ -90,18 +99,11 @@
 
         <p>
 
-            De gebruikte encryptie is herkend als een Caesar-substitutie.<br>
+            Computers kunnen heel snel rekenen. Daardoor kunnen ze heel snel code kraken door heel veel verschillende dingen te proberen. Dit heet Brute Force<br>
+
+            Wij kunnen deze techniek gebruiken om het wachtwoord van onze target te kraken en zo bij zijn berichten te komen <br>
             
-            Bij deze techniek wordt iedere letter vervangen door een andere letter die steeds hetzelfde aantal plaatsen verder in het alfabet staat.<br>
-
-            Bijvoorbeeld: <br>
-
-            a = b<br>
-            b = c<br>
-            c = d<br>
-        
-            Julius Caesar gebruikte deze geheimschrift 2000 jaar geleden om met zijn veldheren te communiceren. <br>
-            Zelfs als de vijand het bericht in handen kreeg, wisten ze niet wat Caesar van plan was. <br>
+            Hoe langer een wachtwoord is, en hoe meer verschillende karakters worden gebruikt, hoe langer het duurt om het wachtwoord met brute force te kraken <br>
 
         </p>
 

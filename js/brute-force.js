@@ -73,11 +73,11 @@ function simulate(total, length){
              `
 
           }
-        else if (lower.checked && length>= 7){
+        else if (lower.checked && numbers.checked && length>= 7){
             document.getElementById("secret").innerHTML=
 
             `
-                ✓ Wachtwoord gevonden: encrypt
+                ✓ Wachtwoord gevonden: 3ncrypt
     
             `
         

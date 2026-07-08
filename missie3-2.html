@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dossier 001</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="window">
+
+        <!-- Info knop -->
+        <button id="infoButton" class="info-btn">ⓘ</button>
+
+        <h2>DOSSIER 003</h2>
+
+        <div class="status">
+            Nieuwe encryptie gedetecteerd: vigenere
+        </div>
+
+        <div class="decoder">
+
+            <h3>Ciphertekst</h3>
+            <div id="cipherRow"></div>
+        
+            <h3>Sleutel</h3>
+            <div id="keyRow"></div>
+        
+            <h3>Berekening</h3>
+        
+            <div id="calculation"></div>
+        
+            <h3>Resultaat</h3>
+        
+            <div id="plainRow"></div>
+        
+        </div>
+
+</div>
+
+<!-- Popup -->
+
+<div id="infoModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2>ANALISTENBRIEFING</h2>
+
+        <p>
+            Vigenere<br>
+            <br>
+            Om te voorkomen dat een geheim bericht met frequentie-analyse gekraakt kan worden, kan je verschillende encryptietechnieken door elkaar heen gebruiken. <br>
+            Dan wordt bijvoorbeeld niet elke E een B, maar sommige een C of en G.<br>
+            Dit gebeurt met een vast patroon: een sleutelwoord. <br>
+            Dit woord wordt onder de tekst herhaald, en bepaald welke Caesar-substitutie gebruikt wordt <br>
+            Als je het sleutelwoord weet kan je de code kraken <br>
+            <br>
+            Bijvoorbeeld:<br>
+            <br>
+            tekst<br>
+            N O O I T M E E R S L A P E N<br>
+            Sleutel<br>
+            C A E S A R C A E S A R C E A<br>
+            <br>
+            Cipherletter : N is de 14de letter van het alfabet <br>
+            Sleutel      : C is de 3de letter van het alfabet <br>
+            <br>
+            14 + 3 = 17<br>
+            <br>
+            De 17de letter van het alfabet is Q<br>
+            <br>
+            De N wordt dus een Q<br>
+            <br>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/missie.js"></script>
+<script src="js/vigrene.js"></script>
+
+</body>
+
+</html>
